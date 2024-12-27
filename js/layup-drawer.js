@@ -66,7 +66,7 @@ LayupDrawer.prototype = {
             textDiv.style.justifyContent = 'center';
             textDiv.style.placeContent = 'center';
             textDiv.style.marginLeft = '60px';
-            textDiv.textContent = `${layer.label}: ${layer.thickness}mm ${layer.grade}`;
+            textDiv.textContent = `${(layer.label).toLowerCase()}: ${layer.thickness}mm ${layer.grade}`;
             textContainer.appendChild(textDiv);
 
             currentY += layerHeight
